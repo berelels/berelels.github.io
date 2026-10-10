@@ -1,21 +1,17 @@
-# Hi, I'm Gabriel 👋
+# Catta Studios
 
-Graduated IT technician (Senac MG) who builds tools that solve real problems, mostly backend, desktop apps, and Linux tinkering. Heading into a Software Engineering degree.
+Site do estúdio, no ar em <https://berelels.github.io>.
 
-### Things I've made
+Estático e sem build: HTML, CSS e JavaScript escritos à mão, publicados pelo
+GitHub Pages direto da branch `main`.
 
-- **[Pauca](https://github.com/berelels/pauca)**: a minimalist Android launcher that makes your phone a little quieter.
-- **[Spot On!](https://github.com/berelels/spot-on)**: predicts football results with Poisson models and machine learning. Python + FastAPI.
-- **[Linux Wallpaper Engine](https://github.com/berelels/linux-wallpaper-engine-gnome-xorg)**: runs animated Steam Workshop wallpapers natively on GNOME/X11. Bash.
-- **[Unbox](https://github.com/berelels/Projeto-Unbox)**: a desktop app for managing commercial inventory. Python, Flet, SQLite, Supabase.
-- **Kortex**: a desktop app for organizing personal information. Python + Flet.
+- `index.html` — a página inteira
+- `css/style.css` — tokens de tema, tipografia cinética e layout
+- `js/main.js` — animações, o gato em pixel art e a troca de idioma (pt/en/es)
+- `assets/` — favicon e ícones
 
-### Tools I reach for
+Para rodar local, qualquer servidor estático resolve:
 
-Python · FastAPI · PHP · PostgreSQL · MySQL · Bash · Linux
-
-### Off the keyboard
-
-Guitar and ukulele, football stats, Hollow Knight and Pokémon.
-
-[LinkedIn](https://www.linkedin.com/in/berelels)
+```bash
+python3 -m http.server 8000
+```
