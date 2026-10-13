@@ -448,7 +448,7 @@ const I18N = {
 
     'proj.hermes': "ERP completo com módulos de Estoque, Vendas, Financeiro e Nota Fiscal. SPA modular com regras de negócio robustas, controle de caixa, PostgreSQL e exportação de relatórios. É o maior sistema do estúdio.",
     'proj.boodice': "Companion de mesa para D&D 5e: ficha de personagem, rolagem de dados e glossário de regras, tudo offline. Monorepo em TypeScript que entrega a mesma base como app Android (Capacitor), desktop (Electron) e PWA, com SQLite local.",
-    'proj.unbox': "Controle de estoque e inventário em arquitetura MVC, com gestão de empréstimos, comprovantes em PDF e níveis de acesso (Admin/User). Feito para inventário escolar.",
+    'proj.unbox': "Controle de estoque e inventário em arquitetura MVC, com gestão de empréstimos, comprovantes em PDF e níveis de acesso (Admin/User). Feito para inventário escolar, em parceria com outro estudante.",
     'proj.wallpaper': "Wallpapers animados do Steam Workshop rodando nativamente no GNOME Shell com X11, sem depender do Windows. Compatível com Zorin OS, Ubuntu e derivadas — é o projeto do estúdio que mais chamou atenção de fora.",
 
     'contact.label': "Contato",
@@ -500,7 +500,7 @@ const I18N = {
 
     'proj.hermes': "A complete ERP with Inventory, Sales, Finance and Invoicing modules. Modular SPA with solid business rules, cash control, PostgreSQL and report exports. The biggest system the studio has built.",
     'proj.boodice': "A tabletop companion for D&D 5e: character sheet, dice rolling and a rules glossary, all offline. A TypeScript monorepo that ships the same codebase as an Android app (Capacitor), desktop (Electron) and PWA, with local SQLite.",
-    'proj.unbox': "Stock and inventory control on an MVC architecture, with loan management, PDF receipts and access levels (Admin/User). Built for school inventory.",
+    'proj.unbox': "Stock and inventory control on an MVC architecture, with loan management, PDF receipts and access levels (Admin/User). Built for school inventory, together with another student.",
     'proj.wallpaper': "Animated Steam Workshop wallpapers running natively on GNOME Shell with X11, no Windows needed. Compatible with Zorin OS, Ubuntu and derivatives — the studio project that drew the most outside attention.",
 
     'contact.label': "Contact",
@@ -552,7 +552,7 @@ const I18N = {
 
     'proj.hermes': "ERP completo con módulos de Inventario, Ventas, Finanzas y Facturación. SPA modular con reglas de negocio robustas, control de caja, PostgreSQL y exportación de informes. Es el sistema más grande del estudio.",
     'proj.boodice': "Companion de mesa para D&D 5e: hoja de personaje, tirada de dados y glosario de reglas, todo offline. Monorepo en TypeScript que entrega la misma base como app Android (Capacitor), escritorio (Electron) y PWA, con SQLite local.",
-    'proj.unbox': "Control de stock e inventario en arquitectura MVC, con gestión de préstamos, comprobantes en PDF y niveles de acceso (Admin/User). Hecho para inventario escolar.",
+    'proj.unbox': "Control de stock e inventario en arquitectura MVC, con gestión de préstamos, comprobantes en PDF y niveles de acceso (Admin/User). Hecho para inventario escolar, junto a otro estudiante.",
     'proj.wallpaper': "Wallpapers animados de Steam Workshop corriendo de forma nativa en GNOME Shell con X11, sin depender de Windows. Compatible con Zorin OS, Ubuntu y derivadas — es el proyecto del estudio que más atención atrajo de afuera.",
 
     'contact.label': "Contacto",
