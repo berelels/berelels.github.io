@@ -1,6 +1,6 @@
 # Catta Studios
 
-Site do estúdio, no ar em <https://berelels.github.io>.
+Site do estúdio, no ar em <https://cattastudios.com.br>.
 
 Estático e sem build: HTML, CSS e JavaScript escritos à mão, publicados pelo
 GitHub Pages direto da branch `main`.
