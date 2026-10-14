@@ -6,7 +6,7 @@
    sanduíche no canto. O tema padrão é o do sistema.
    ============================================= */
 :root {
-  --bg: #f4f2ec; --bg-2: #fffefa; --fg: #1c2028; --fg-soft: #4f5763; --fg-dim: #737b87;
+  --bg: #f4f2ec; --bg-2: #fffefa; --fg: #1c2028; --fg-soft: #4f5763; --fg-dim: #606670;
   --accent: #3f6ca8; --accent-2: #6e9bc9;
   --line: rgba(28,32,40,.12); --line-strong: rgba(28,32,40,.22);
   --shadow: 0 22px 50px -26px rgba(30,45,70,.45);
