@@ -58,6 +58,7 @@
           if (v != null) el.setAttribute(attr, v);
         });
       });
+      markBrasil(root === document ? document.body : root);
     },
     set(l, rebuild = true) {
       this.value = l;
@@ -70,6 +71,25 @@
       if (rebuild) Page.rebuild();
     },
   };
+  // "Brasil" sempre com o s em itálico e sublinhado
+  function markBrasil(root = document.body) {
+    const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: (n) => (/Brasil/.test(n.nodeValue) && !n.parentElement.closest('script, style, .br-s, svg') ? 1 : 2),
+    });
+    const nodes = [];
+    while (w.nextNode()) nodes.push(w.currentNode);
+    nodes.forEach((n) => {
+      const frag = document.createDocumentFragment();
+      n.nodeValue.split(/(Brasil)/).forEach((part) => {
+        if (part !== 'Brasil') { if (part) frag.append(part); return; }
+        const s = document.createElement('span');
+        s.className = 'br-s';
+        s.textContent = 's';
+        frag.append('Bra', s, 'il');
+      });
+      n.replaceWith(frag);
+    });
+  }
   function setTitle(key) {
     const c = $('[data-barba="container"]');
     const en = c?.dataset.titleEn || document.title;
@@ -693,7 +713,7 @@
       const tl = gsap.timeline({ scrollTrigger: { trigger: el, start: 'top top', end: 'bottom bottom', scrub: 0.8 } });
       imgs.forEach((im) => {
         const [x, y, w, r] = im.dataset.to.split(',').map(Number);
-        gsap.set(im, { left: '50%', top: '50%', xPercent: -50, yPercent: -50, width: `${w}vw`, aspectRatio: im.dataset.ratio || '4/3', scale: 0.2, rotate: 0, opacity: 0 });
+        gsap.set(im, { left: '50%', top: '50%', xPercent: -50, yPercent: -50, width: `${innerWidth < 700 ? w * 1.9 : w}vw`, aspectRatio: im.dataset.ratio || '4/3', scale: 0.2, rotate: 0, opacity: 0 });
         tl.to(im, { x: `${x}vw`, y: `${y}vh`, scale: 1, rotate: r, opacity: 1, ease: 'power2.out', duration: 1 }, 0);
       });
       tl.to($('.showcase__title', el), { scale: 0.9, opacity: 0.25, duration: 0.6 }, 0.4);

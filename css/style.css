@@ -1010,3 +1010,9 @@ body.ns-home .nav:not(.is-solid) .burger { background: var(--papel); color: var(
 }
 @keyframes cue { 0% { transform: translateY(-100%); } 70%, 100% { transform: translateY(260%); } }
 .hhero__cue:hover { color: var(--papel); }
+
+/* mini banner pequeno: só o ícone */
+@container (max-width: 240px) { .mb__name { display: none; } .mb__icon { width: 46cqmin; } }
+
+/* o "s" de Brasil */
+.br-s { font-style: italic; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: .18em; }
