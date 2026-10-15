@@ -1015,4 +1015,4 @@ body.ns-home .nav:not(.is-solid) .burger { background: var(--papel); color: var(
 @container (max-width: 240px) { .mb__name { display: none; } .mb__icon { width: 46cqmin; } }
 
 /* o "s" de Brasil */
-.br-s { font-style: italic; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: .18em; }
+.br-s { padding: 0 .08em 0 .02em; font-style: italic; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: .18em; }
