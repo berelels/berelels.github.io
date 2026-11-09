@@ -1,0 +1,4 @@
+Inter, Copyright The Inter Project Authors (https://github.com/rsms/inter)
+JetBrains Mono, Copyright The JetBrains Mono Project Authors (https://github.com/JetBrains/JetBrainsMono)
+Both are licensed under the SIL Open Font License 1.1: https://openfontlicense.org
+These files are Latin subsets converted to WOFF2.

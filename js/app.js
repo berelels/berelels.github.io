@@ -8,7 +8,9 @@
 (() => {
   'use strict';
 
-  const BASE = '/';
+  // o idioma vem do endereço: /pt/ e /es/ são páginas estáticas, a raiz é inglês
+  const PATH_LANG = (location.pathname.match(/^\/(pt|es)\//) || [])[1] || 'en';
+  const BASE = PATH_LANG === 'en' ? '/' : `/${PATH_LANG}/`;
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
   const touch = matchMedia('(hover: none)').matches;
@@ -27,16 +29,7 @@
   const I18N = window.CATTA_I18N || {};
   const Lang = {
     value: 'en',
-    detect() {
-      const saved = store.get('catta-lang');
-      if (saved && (saved === 'en' || I18N[saved])) return saved;
-      for (const l of navigator.languages || [navigator.language || 'en']) {
-        const k = String(l).slice(0, 2).toLowerCase();
-        if (k === 'en') return 'en';
-        if (I18N[k]) return k;
-      }
-      return 'en';
-    },
+    detect() { return PATH_LANG; },
     t(key, fallback) {
       if (this.value !== 'en' && I18N[this.value] && I18N[this.value][key] != null) return I18N[this.value][key];
       return fallback;
@@ -62,7 +55,6 @@
     },
     set(l, rebuild = true) {
       this.value = l;
-      store.set('catta-lang', l);
       document.documentElement.lang = l === 'pt' ? 'pt-BR' : l;
       $$('.lang button').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.lang === l)));
       this.apply();
@@ -173,6 +165,7 @@
           <p>© ${new Date().getFullYear()} Catta Studios</p>
           <p data-i18n="footer.where">Made in Brasil, for clients anywhere.</p>
           <p><a class="link-u" href="mailto:gabrieldiasdev@proton.me">gabrieldiasdev@proton.me</a></p>
+          <p><a class="link-u" href="${BASE}privacy/" data-i18n="nav.privacy">Privacy</a></p>
         </div>
       </div>
       <div class="footer__mark"><span class="footer__hint" aria-hidden="true" data-i18n="${touch ? 'footer.tap' : 'footer.hint'}">${touch ? 'tap the letters' : 'hover the letters'}</span></div>`;
@@ -935,7 +928,12 @@
     buildChrome();
     Lang.value = Lang.detect();
     Lang.set(Lang.value, false);
-    $$('.lang button').forEach((b) => b.addEventListener('click', () => Lang.set(b.dataset.lang)));
+    $$('.lang button').forEach((b) => b.addEventListener('click', () => {
+      const l = b.dataset.lang;
+      if (l === PATH_LANG) return;
+      store.set('catta-lang', l);
+      location.href = (l === 'en' ? '/' : `/${l}/`) + location.pathname.slice(BASE.length) + location.hash;
+    }));
     startClock();
     Veil.init();
     startLenis();

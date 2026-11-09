@@ -1,0 +1,32 @@
+# Catta Studios
+
+> Catta Studios is an independent software studio in Divinópolis, Minas Gerais, Brasil, founded and run by Gabriel Dias. It builds websites and custom systems for businesses anywhere, working in English, Portuguese and Spanish.
+
+- Websites start at US$ 1,000 (R$ 3,200 in Brasil) and take 2 to 4 weeks.
+- Custom systems start at US$ 5,000 (R$ 15,000 in Brasil) and take 6 to 10 weeks.
+- The monthly care plan starts at US$ 90 (R$ 290 in Brasil) and includes up to 3 hours of work.
+- The price is fixed in writing after a free 30 minute call. The client owns the code, docs, domains and accounts at launch.
+- Contact: gabrieldiasdev@proton.me
+
+## Pages
+
+- [Services and prices](https://cattastudios.com.br/services/): websites, systems and the care plan
+- [Work](https://cattastudios.com.br/work/): all projects
+- [Studio](https://cattastudios.com.br/studio/): who Catta Studios and Gabriel Dias are
+- [Contact and FAQ](https://cattastudios.com.br/contact/): cost, timeline, code ownership and how to start
+- [Privacy](https://cattastudios.com.br/privacy/): what the site stores and loads
+
+## Projects
+
+- [Hermes ERP](https://cattastudios.com.br/work/hermes-erp/): custom management system for Grupo Hermes, in beta
+- [OpenAlt](https://cattastudios.com.br/work/openalt/): turns a phone or tablet into a second monitor, open source, GPL
+- [Pauca](https://cattastudios.com.br/work/pauca/): minimalist Android launcher on the Play Store, open source, GPL
+- [Linux Wallpaper Engine](https://cattastudios.com.br/work/linux-wallpaper-engine/): animated Steam Workshop wallpapers on GNOME with X11, MIT
+
+## Optional
+
+- [Versão em português](https://cattastudios.com.br/pt/)
+- [Versión en español](https://cattastudios.com.br/es/)
+- [Instagram](https://www.instagram.com/catta.studios/)
+- [GitHub](https://github.com/berelels)
+- [LinkedIn](https://www.linkedin.com/in/berelels/)

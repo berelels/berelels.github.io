@@ -1,3 +1,12 @@
+@font-face { font-family: 'Inter'; font-weight: 300; font-style: normal; font-display: swap; src: url('/assets/fonts/inter-Light.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 400; font-style: normal; font-display: swap; src: url('/assets/fonts/inter-Regular.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 500; font-style: normal; font-display: swap; src: url('/assets/fonts/inter-Medium.woff2') format('woff2'); }
+@font-face { font-family: 'Inter'; font-weight: 600; font-style: normal; font-display: swap; src: url('/assets/fonts/inter-SemiBold.woff2') format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 400; font-style: normal; font-display: swap; src: url('/assets/fonts/jetbrains-mono-Regular.woff2') format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 500; font-style: normal; font-display: swap; src: url('/assets/fonts/jetbrains-mono-Medium.woff2') format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 700; font-style: normal; font-display: swap; src: url('/assets/fonts/jetbrains-mono-Bold.woff2') format('woff2'); }
+@font-face { font-family: 'JetBrains Mono'; font-weight: 800; font-style: normal; font-display: swap; src: url('/assets/fonts/jetbrains-mono-ExtraBold.woff2') format('woff2'); }
+
 /* =============================================
    CATTA STUDIOS · v2
    Tokens da marca (catta-studios-brand/variables.css) + layout do site novo.
@@ -1016,3 +1025,27 @@ body.ns-home .nav:not(.is-solid) .burger { background: var(--papel); color: var(
 
 /* o "s" de Brasil */
 .br-s { padding: 0 .08em 0 .02em; font-style: italic; text-decoration: underline; text-decoration-thickness: 1.5px; text-underline-offset: .18em; }
+
+/* sem JavaScript tudo fica visível */
+html:not(.js) .acc__a { height: auto; }
+html:not(.js) .tabs__panel[hidden] { display: flex; }
+.noscript-nav { display: flex; flex-wrap: wrap; gap: 16px; padding: 16px; font-family: var(--font-mono); }
+
+/* resposta direta no início da página */
+.answer { max-width: 62rem; margin: 0 auto; padding: 56px 24px; }
+.answer h2 { font-family: var(--font-mono); font-weight: 700; letter-spacing: -0.03em; font-size: clamp(1.2rem, 2vw, 1.6rem); margin-bottom: 12px; }
+.answer p { max-width: 62ch; }
+
+/* privacidade */
+.legal { max-width: 62rem; margin: 0 auto; padding: 0 24px 96px; display: flex; flex-direction: column; gap: 40px; }
+.legal h2 { font-family: var(--font-mono); font-weight: 700; letter-spacing: -0.03em; font-size: clamp(1.15rem, 2vw, 1.5rem); margin-bottom: 10px; }
+.legal p { max-width: 62ch; }
+.legal a { text-decoration: underline; }
+
+/* aviso de cookies */
+.consent { position: fixed; left: 16px; right: 16px; bottom: 16px; z-index: 300; max-width: 30rem; margin-left: auto; padding: 20px; background: var(--cta-bg); color: #fff; border-radius: 12px; font-size: 0.9rem; line-height: 1.5; box-shadow: 0 12px 40px rgba(0, 0, 0, .3); }
+.consent a { color: inherit; text-decoration: underline; }
+.consent__row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 14px; font-family: var(--font-mono); }
+.consent__row button { flex: 1 1 8rem; min-height: 44px; padding: 8px 16px; font: inherit; font-weight: 700; color: inherit; background: transparent; border: 1px solid currentColor; border-radius: 8px; cursor: pointer; }
+.consent__row button:hover { background: #fff; color: var(--cta-bg); }
+.consent :focus-visible { outline: 2px solid currentColor; outline-offset: 2px; }
