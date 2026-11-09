@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://unpkg.com 'sha256-QHvVmG48HbtY8ogpwufJV256AiFfGbAiNVrh9LuCK8U='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'sha256-QHvVmG48HbtY8ogpwufJV256AiFfGbAiNVrh9LuCK8U='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self' mailto:" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
   <title>Privacy and cookies · Catta Studios</title>
   <meta name="description" content="What the Catta Studios site stores and loads: no tracking, no first party cookies, with third parties and the person responsible explained in plain language." />
@@ -32,9 +32,10 @@
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="/assets/brand/icone-32.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="/assets/brand/icone-180.png" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preload" href="/assets/fonts/inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/jetbrains-mono-Bold.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/css/style.css?v=1794238509" />
+  <link rel="stylesheet" href="/css/style.css?v=1794240577" />
   <script>(function(d,l){d.classList.add('js');addEventListener('load',function(){if(!window.gsap){d.classList.remove('js');document.body.classList.remove('is-loading')}});try{var p=l.pathname;if(/^\/(pt|es)\//.test(p))return;var s=localStorage.getItem('catta-lang');if(!s&&!/bot|crawl|spider|slurp/i.test(navigator.userAgent)){var b=(navigator.language||'').slice(0,2);if(b=='pt'||b=='es')s=b}if(s=='pt'||s=='es')l.replace('/'+s+p+l.search+l.hash)}catch(e){}})(document.documentElement,location)</script>
   <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://cattastudios.com.br/#org", "name": "Catta Studios", "url": "https://cattastudios.com.br/", "logo": "https://cattastudios.com.br/assets/brand/icone-180.png", "image": "https://cattastudios.com.br/assets/img/og/default.jpg", "email": "gabrieldiasdev@proton.me", "areaServed": {"@type": "Place", "name": "Worldwide"}, "knowsLanguage": ["en", "pt", "es"], "address": {"@type": "PostalAddress", "addressLocality": "Divinópolis", "addressRegion": "MG", "addressCountry": "BR"}, "founder": {"@type": "Person", "@id": "https://cattastudios.com.br/studio/#gabriel", "name": "Gabriel Dias", "jobTitle": "Founder and developer", "sameAs": ["https://github.com/berelels", "https://www.linkedin.com/in/berelels/"]}, "sameAs": ["https://www.instagram.com/catta.studios/", "https://github.com/berelels", "https://www.linkedin.com/in/berelels/"]}, {"@type": "WebSite", "@id": "https://cattastudios.com.br/#site", "url": "https://cattastudios.com.br/", "name": "Catta Studios", "publisher": {"@id": "https://cattastudios.com.br/#org"}, "inLanguage": ["en", "pt-BR", "es"]}, {"@type": "WebPage", "@id": "https://cattastudios.com.br/privacy/", "url": "https://cattastudios.com.br/privacy/", "name": "Privacy and cookies · Catta Studios", "description": "What the Catta Studios site stores and loads: no tracking, no first party cookies, with third parties and the person responsible explained in plain language.", "inLanguage": "en", "isPartOf": {"@id": "https://cattastudios.com.br/#site"}, "about": {"@id": "https://cattastudios.com.br/#org"}}]}</script>
 </head>
@@ -51,7 +52,7 @@
         <div class="legal">
           <section><h2 data-i18n="pv.s1">What does the site store?</h2><p data-i18n="pv.p1">No first party cookies. Two items stay in your browser’s local storage and are never sent to us: <code>catta-lang</code>, the language you picked, and <code>catta-cookie-notice</code>, that you closed the cookie notice. You can erase them by clearing this site’s data in your browser.</p></section>
           <section><h2 data-i18n="pv.s2">What happens with the contact form?</h2><p data-i18n="pv.p2">The form sends nothing to a server. It only opens your email app with the text filled in, and you decide whether to send it. If you do, we receive your message and address, and use them only to reply.</p></section>
-          <section><h2 data-i18n="pv.s3">Which third parties receive data?</h2><p data-i18n="pv.p3">The animation scripts come from jsDelivr and unpkg, which receive your IP address as in any download. The site is hosted on GitHub Pages, which may log your IP and technical data about the visit for security. Fonts are served by the site itself, without Google Fonts. External links, such as Instagram and GitHub, follow those services’ policies when you open them.</p></section>
+          <section><h2 data-i18n="pv.s3">Which third parties receive data?</h2><p data-i18n="pv.p3">The animation scripts come from jsDelivr, which receives your IP address as in any download. The site is hosted on GitHub Pages, which may log your IP and technical data about the visit for security. Fonts are served by the site itself, without Google Fonts. External links, such as Instagram and GitHub, follow those services’ policies when you open them.</p></section>
           <section><h2 data-i18n="pv.s5">Who is responsible and what are my rights?</h2><p data-i18n="pv.p5">The person responsible is Gabriel Dias, of Catta Studios, in Divinópolis, Minas Gerais, Brasil. To ask for access, correction or deletion of data, under the LGPD or the GDPR, write to <a href="mailto:gabrieldiasdev@proton.me">gabrieldiasdev@proton.me</a>.</p></section>
           <section id="security"><h2 data-i18n="pv.s6">How do I report a security problem?</h2><p data-i18n="pv.p6">Write to <a href="mailto:gabrieldiasdev@proton.me">gabrieldiasdev@proton.me</a> with the steps to reproduce it. We reply within 24 hours. Please don’t publish the problem before it’s fixed, access other people’s data or take the site down. The contacts are also in <a href="/.well-known/security.txt">security.txt</a>.</p></section>
         </div>
@@ -59,17 +60,17 @@
     </main>
   </div>
   <noscript><footer class="noscript-nav"><a href="/">Home</a><a href="/work/">Work</a><a href="/services/">Services</a><a href="/studio/">Studio</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="mailto:gabrieldiasdev@proton.me">gabrieldiasdev@proton.me</a></footer></noscript>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" integrity="sha384-xb96EMJeax+NLXMC88ZBa1xAeAW+kn+horHh/zFlbMLG2UPWhMJJSlv7fi57hS+Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js" integrity="sha384-8oj95/2bNit2rlOOsJCaGBxSngfBWjoyQ8MtNbxmuk0v0B2nAK3Bwb1OJ5fWMWlk" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js" integrity="sha384-JCMGAgtMgo/19ttIm8BSnUFxOA5KAxaKT7jZdTDtaL0df8+CHKRo9XFCmhsvUlXG" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js" integrity="sha384-lg3+EgIwmxYq9YD4ix279pdUEasqmOS17fF+2mI/NEg6JHkawYaWYpJ6nKZenPOy" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/lenis@1.3.4/dist/lenis.min.js" integrity="sha384-FKTX0CNJ8ngN1oGMBReVu7mvjTJyjFiD5etb1NKnYxc+8eFI2O0KWnksTN+oTFcu" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/@barba/core@2.10.3/dist/barba.umd.js" integrity="sha384-T3/AkZI+fU7l5Ip18n7KLEi8r0LPLwiyIp0+anP6LuGlXmAwDS6l6YhmhJjiki/x" crossorigin="anonymous"></script>
-  <script src="/js/i18n.js?v=1794238509"></script>
-  <script src="/js/consent.js?v=1794238509"></script>
-  <script src="/js/glyphs.js?v=1794238509"></script>
-  <script src="/js/app.js?v=1794238509"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js" integrity="sha384-HOvlOYPIs/zjoIkWUGXkVmXsjr8GuZLV+Q+rcPwmJOVZVpvTSXQChiN4t9Euv9Vc" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js" integrity="sha384-P8VzCVnT9NBUkMrpcIZrJbA7EBjJvh/fJS6PmP+4nLIM284DtsImIv8D0fFjIkeh" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js" integrity="sha384-xb96EMJeax+NLXMC88ZBa1xAeAW+kn+horHh/zFlbMLG2UPWhMJJSlv7fi57hS+Q" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js" integrity="sha384-8oj95/2bNit2rlOOsJCaGBxSngfBWjoyQ8MtNbxmuk0v0B2nAK3Bwb1OJ5fWMWlk" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js" integrity="sha384-JCMGAgtMgo/19ttIm8BSnUFxOA5KAxaKT7jZdTDtaL0df8+CHKRo9XFCmhsvUlXG" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js" integrity="sha384-lg3+EgIwmxYq9YD4ix279pdUEasqmOS17fF+2mI/NEg6JHkawYaWYpJ6nKZenPOy" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" integrity="sha384-FKTX0CNJ8ngN1oGMBReVu7mvjTJyjFiD5etb1NKnYxc+8eFI2O0KWnksTN+oTFcu" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@barba/core@2.10.3/dist/barba.umd.js" integrity="sha384-T3/AkZI+fU7l5Ip18n7KLEi8r0LPLwiyIp0+anP6LuGlXmAwDS6l6YhmhJjiki/x" crossorigin="anonymous"></script>
+  <script defer src="/js/i18n.js?v=1794240577"></script>
+  <script defer src="/js/consent.js?v=1794240577"></script>
+  <script defer src="/js/glyphs.js?v=1794240577"></script>
+  <script defer src="/js/app.js?v=1794240577"></script>
 </body>
 </html>

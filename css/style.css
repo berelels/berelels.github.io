@@ -347,11 +347,11 @@ body.drawer-open .burger { background: var(--nevoa); color: var(--noite); }
   max-width: 14ch;
 }
 .cta-band h2 em { font-weight: 500; }
-.cta-band .eyebrow { color: rgba(244,242,236,.8); }
+.cta-band .eyebrow { color: var(--papel); }
 .cta-band .eyebrow::before { color: var(--tinta); }
 .cta-band .btn { --btn-bg: var(--papel); --btn-fg: var(--tinta); height: 52px; padding: 0 1.4em 0 1.6em; font-size: 1rem; }
 .cta-band .btn::before { background: var(--tinta); }
-.cta-band__meta { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; font-family: var(--font-mono); font-size: .8rem; opacity: .85; }
+.cta-band__meta { display: flex; gap: 22px; flex-wrap: wrap; justify-content: center; font-family: var(--font-mono); font-size: .8rem; }
 body.ns-contact .cta-band { display: none; }
 body.ns-contact .footer { margin-top: 0; padding-top: clamp(60px, 8vw, 110px); }
 
@@ -856,7 +856,7 @@ body.ns-case .page > .case-body { border-radius: var(--radius); }
 .hhero__mark svg { width: 100%; height: auto; overflow: visible; }
 .hhero__mark .glyph { fill: var(--papel); }
 .hhero__mark .glyph.is-bar { fill: var(--tinta); }
-.hhero__tag { font-size: clamp(1rem, 1.7vw, 1.45rem); font-weight: 400; letter-spacing: -0.01em; opacity: .92; }
+.hhero__tag { font-size: clamp(1rem, 1.7vw, 1.45rem); font-weight: 400; letter-spacing: -0.01em; }
 .hhero__foot {
   position: absolute; left: var(--gutter); right: var(--gutter); bottom: clamp(18px, 3vw, 36px);
   display: flex; justify-content: space-between; align-items: end; gap: 16px;
@@ -1009,7 +1009,7 @@ body.ns-home .nav:not(.is-solid) .burger { background: var(--papel); color: var(
   position: absolute; left: 50%; bottom: 0; translate: -50% 0;
   display: flex; flex-direction: column; align-items: center; gap: 10px;
   font-family: var(--font-mono); font-size: .76rem; letter-spacing: .08em; text-transform: uppercase;
-  color: rgba(244,242,236,.85);
+  color: var(--papel);
 }
 .hhero__cue i { position: relative; display: block; width: 1px; height: clamp(34px, 5vh, 56px); background: rgba(244,242,236,.3); overflow: hidden; }
 .hhero__cue i::after {

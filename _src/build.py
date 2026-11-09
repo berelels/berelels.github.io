@@ -23,7 +23,7 @@ BOOT = ("(function(d,l){d.classList.add('js');addEventListener('load',function()
         "if(!s&&!/bot|crawl|spider|slurp/i.test(navigator.userAgent)){var b=(navigator.language||'').slice(0,2);if(b=='pt'||b=='es')s=b}"
         "if(s=='pt'||s=='es')l.replace('/'+s+p+l.search+l.hash)}catch(e){}})(document.documentElement,location)")
 BOOT_HASH = base64.b64encode(hashlib.sha256(BOOT.encode()).digest()).decode()
-CSP = ("default-src 'self'; script-src 'self' https://cdn.jsdelivr.net https://unpkg.com 'sha256-" + BOOT_HASH + "'; "
+CSP = ("default-src 'self'; script-src 'self' https://cdn.jsdelivr.net 'sha256-" + BOOT_HASH + "'; "
        "style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; "
        "object-src 'none'; base-uri 'self'; form-action 'self' mailto:")
 
@@ -58,6 +58,7 @@ HEAD = '''<!DOCTYPE html>
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" href="/assets/brand/icone-32.png" sizes="32x32" />
   <link rel="apple-touch-icon" href="/assets/brand/icone-180.png" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
   <link rel="preload" href="/assets/fonts/inter-Regular.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/assets/fonts/jetbrains-mono-Bold.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="/css/style.css?v={v}" />
@@ -76,14 +77,14 @@ CDN = [
     ('https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MorphSVGPlugin.min.js', '8oj95/2bNit2rlOOsJCaGBxSngfBWjoyQ8MtNbxmuk0v0B2nAK3Bwb1OJ5fWMWlk'),
     ('https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/CustomEase.min.js', 'JCMGAgtMgo/19ttIm8BSnUFxOA5KAxaKT7jZdTDtaL0df8+CHKRo9XFCmhsvUlXG'),
     ('https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Flip.min.js', 'lg3+EgIwmxYq9YD4ix279pdUEasqmOS17fF+2mI/NEg6JHkawYaWYpJ6nKZenPOy'),
-    ('https://unpkg.com/lenis@1.3.4/dist/lenis.min.js', 'FKTX0CNJ8ngN1oGMBReVu7mvjTJyjFiD5etb1NKnYxc+8eFI2O0KWnksTN+oTFcu'),
-    ('https://unpkg.com/@barba/core@2.10.3/dist/barba.umd.js', 'T3/AkZI+fU7l5Ip18n7KLEi8r0LPLwiyIp0+anP6LuGlXmAwDS6l6YhmhJjiki/x'),
+    ('https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js', 'FKTX0CNJ8ngN1oGMBReVu7mvjTJyjFiD5etb1NKnYxc+8eFI2O0KWnksTN+oTFcu'),
+    ('https://cdn.jsdelivr.net/npm/@barba/core@2.10.3/dist/barba.umd.js', 'T3/AkZI+fU7l5Ip18n7KLEi8r0LPLwiyIp0+anP6LuGlXmAwDS6l6YhmhJjiki/x'),
 ]
 FOOT = '  </div>\n  <noscript><footer class="noscript-nav">{nav}<a href="mailto:gabrieldiasdev@proton.me">gabrieldiasdev@proton.me</a></footer></noscript>\n' + ''.join(
-    f'  <script src="{u}" integrity="sha384-{h}" crossorigin="anonymous"></script>\n' for u, h in CDN) + '''  <script src="/js/i18n.js?v={v}"></script>
-  <script src="/js/consent.js?v={v}"></script>
-  <script src="/js/glyphs.js?v={v}"></script>
-  <script src="/js/app.js?v={v}"></script>
+    f'  <script defer src="{u}" integrity="sha384-{h}" crossorigin="anonymous"></script>\n' for u, h in CDN) + '''  <script defer src="/js/i18n.js?v={v}"></script>
+  <script defer src="/js/consent.js?v={v}"></script>
+  <script defer src="/js/glyphs.js?v={v}"></script>
+  <script defer src="/js/app.js?v={v}"></script>
 </body>
 </html>
 '''

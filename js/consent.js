@@ -5,7 +5,7 @@
   const dict = (window.CATTA_I18N || {})[lang] || {};
   const EN = {
     'consent.text': 'This site uses no tracking cookies or analytics. It only keeps your language and that you closed this notice in your browser.',
-    'consent.close': 'Close', 'consent.more': 'Learn more', 'consent.label': 'Cookie notice',
+    'consent.close': 'Close', 'consent.more': 'Privacy policy', 'consent.label': 'Cookie notice',
   };
   const t = (k) => dict[k] || EN[k];
   try { if (localStorage.getItem(KEY)) return; } catch (e) { /* sem armazenamento: mostra o aviso */ }
