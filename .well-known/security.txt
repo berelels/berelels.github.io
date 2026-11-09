@@ -1,0 +1,5 @@
+Contact: mailto:gabrieldiasdev@proton.me
+Expires: 2027-11-01T00:00:00Z
+Preferred-Languages: en, pt, es
+Canonical: https://cattastudios.com.br/.well-known/security.txt
+Policy: https://cattastudios.com.br/pauca/security/

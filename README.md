@@ -11,6 +11,8 @@ JavaScript à mão, com GSAP, Lenis e Barba carregados por CDN.
 - `js/i18n.js`: textos em português e espanhol (o inglês fica no próprio HTML)
 - `js/glyphs.js`: contornos das letras da JetBrains Mono para as animações
 - `assets/`: ícones, prints dos produtos e imagens de compartilhamento (`assets/img/og/`)
+- `robots.txt`, `sitemap.xml`: para os buscadores; valem para o domínio inteiro, inclusive `/pauca/`. Ao criar uma página, inclua no sitemap
+- `.well-known/security.txt`: contato de segurança. O campo `Expires` vence em 01/11/2027: renove antes dessa data
 
 ## Editar uma página
 

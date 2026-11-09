@@ -1,0 +1,3 @@
+# Sem isto o GitHub Pages ignora pastas que começam com ponto, e o security.txt não é publicado.
+# Não troque por .nojekyll: ele publicaria também a pasta _src/.
+include: [".well-known"]

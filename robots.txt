@@ -1,0 +1,6 @@
+# Tudo liberado. Vale para todo o domínio, inclusive os sites em subpastas, como /pauca/.
+User-agent: *
+Allow: /
+
+Sitemap: https://cattastudios.com.br/sitemap.xml
+Sitemap: https://cattastudios.com.br/pauca/sitemap.xml
